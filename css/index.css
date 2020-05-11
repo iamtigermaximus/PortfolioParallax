@@ -1,0 +1,277 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    line-height: 1em;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+#stickynav {
+    width: 100%;
+    background: black;
+    border-top: 1px solid;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    height: 50px;
+}
+
+.navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 9px 0px;
+    background-color: black;
+}
+
+li {
+    text-align: left;
+    display: inline;
+}
+
+li a {
+    color: white;
+    padding: 9px 17px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navmenu li a:hover {
+    color: orange;
+    transition: .3s;
+}
+
+#home,
+#about,
+#projects,
+#blog,
+#contact {}
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    position: relative;
+    opacity: 1.0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.pimg1 {
+    background-image: url(../images/aerialstreet.jpg);
+    min-height: 100%;
+}
+
+.pimg2 {
+    background-image: url(../images/aerialcitylight.jpg);
+    min-height: 600px;
+}
+
+.pimg3 {
+    background-image: url(../images/aerialcitydark.jpg);
+    min-height: 600px;
+}
+
+.pimg4 {
+    background-image: url(../images/aerialcityclouds.jpg);
+    min-height: 600px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.border {
+    display: block;
+    margin: 0;
+    text-transform: initial;
+    font-size: 25px;
+    padding: 0 100px;
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    line-height: 1em;
+    text-shadow: 2px 2px gray;
+}
+
+.ptext .border {
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans {
+    background-color: transparent;
+    text-shadow: 2px 2px #111;
+}
+
+.ptext-contact {
+    background-color: transparent;
+    color: #fff;
+    padding: 120px;
+}
+
+.ptext-contact h1 {
+    text-align: center;
+}
+
+.ptext-contact>p {
+    text-align: center;
+}
+
+
+/*
+.pangalan {
+    font-size: 30px;
+    text-decoration: none;
+    color: orange;
+    font-weight: 900;
+    font-family: 'Ultra', serif;
+    animation: text 3s 1;
+}*/
+
+svg {
+    display: inline;
+    font: 5em 'Montserrat';
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    line-height: 1em;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 20px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.feedback-input {
+    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: rgb(27, 22, 22);
+    border: 2px solid gray;
+    transition: all 0.3s;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid orange;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: rgb(248, 164, 7);
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: rgb(211, 134, 46);
+}
+
+.footer {
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    position: static;
+    background-color: black;
+    text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@media(max-width:568px) {
+    .pimg1,
+    .pimg2,
+    .pimg3,
+    .pimg4 {
+        background-attachment: scroll;
+    }
+}
